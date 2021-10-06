@@ -1,8 +1,13 @@
-package prg.sid.eventservice;
+package prg.sid.eventservice.Controller;
+/**
+ * this class was created for webclient connection
+ * recive requset
+* */
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import prg.sid.eventservice.DTO.Event;
 import reactor.core.publisher.Flux;
 import reactor.util.function.Tuple2;
 import java.time.Duration;

@@ -1,4 +1,4 @@
-package prg.sid.eventservice;
+package prg.sid.eventservice.Service;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.kafka.core.reactive.ReactiveKafkaConsumerTemplate;
 import org.springframework.stereotype.Service;
+import prg.sid.eventservice.DTO.ConsumerDTO;
 import reactor.core.publisher.Flux;
 
 @Service

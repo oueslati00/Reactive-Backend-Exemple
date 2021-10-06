@@ -19,7 +19,8 @@ public class WebFluxReactiveApplication {
         SpringApplication.run(WebFluxReactiveApplication.class, args);
     }
 
-    // after every connection , remove all the data , and add it again for test
+    // after every connection , remove all the data , and add it again for test : solution for test
+    //TODO : another solution will be added
     @Bean
     CommandLineRunner start(SocieteRepository societeRepository,
                             TransactionRepository transactionRepository){
@@ -41,7 +42,6 @@ public class WebFluxReactiveApplication {
                                    }
                                });
                            });
-
                 });
             });
 

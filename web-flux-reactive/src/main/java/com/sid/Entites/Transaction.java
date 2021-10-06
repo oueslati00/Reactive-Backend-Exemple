@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.Instant;
 
 @Document
-@AllArgsConstructor@Data@NoArgsConstructor@ToString
+@AllArgsConstructor @Data @NoArgsConstructor @ToString
 public class Transaction {
     private String id;
     private Instant instant;
