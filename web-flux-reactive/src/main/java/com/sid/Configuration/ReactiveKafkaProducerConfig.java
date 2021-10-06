@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.reactive.ReactiveKafkaProducerTemplate;
 import reactor.kafka.sender.SenderOptions;
 
+import java.util.List;
 import java.util.Map;
 
 @Configuration

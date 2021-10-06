@@ -22,7 +22,7 @@ public class ReactiveProducerService {
     public void send(ProducerDTO producerDTO) {
         log.info("send to topic={}, {}={},", topic, ProducerDTO.class.getSimpleName(), producerDTO);
         reactiveKafkaProducerTemplate.send(topic, producerDTO)
-                .doOnSuccess(senderResult -> log.info("sent {} offset : {}", producerDTO, senderResult.recordMetadata().offset()))
+               .doOnSuccess(senderResult -> log.info("sent {} offset : {}", producerDTO, senderResult.recordMetadata().offset()))
                 .subscribe(
                         data ->{
                             System.out.println(data);
